@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/services.css">
+    <link rel="stylesheet" href="/style/agendamento.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Barbearia</title>
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <img src="/images/logoo.png" alt="logo" id="nav_logo">
+
+        <ul id="nav_list">
+            <li class="nav-item active">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a href="#preco">Preços</a>
+            </li>
+        </ul>
+
+        <button class="btn-default" onclick="rolarParaSessao('agendamento')">
+            Agende aqui
+        </button>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a href="#preco">Preços</a>
+            </li>
+        </ul>
+
+        <button class="btn-default">
+            Agende aqui
+        </button>
+    </div>
+</header>
+
+<main id="content">
+    <section id="home">
+        <div id="texto">
+            <h1 class="titulo">Um lugar onde a máquina não para, e o <span>estilo</span> também não!</h1>
+
+            <p class="descricao">Aqui no Bigode Grosso, a única coisa que não para é a máquina! Cortamos, aparamos e modelamos seu estilo com todo o cuidado que você merece. Não importa se é um corte clássico ou um look mais ousado, nossa missão é deixar você com o visual que sempre sonhou. Aqui, a conversa é boa, o ambiente é descontraído e o estilo nunca sai de moda. Venha transformar seu visual e sair de cabeça erguida, porque no Bigode Grosso, o estilo é garantido!</p>
+
+            <span id="line"></span>
+
+        </div>
+        <div id="foto">
+            <img src="/images/img_aux.jpg" alt="barbeiro">
+        </div>
+    </section>
+
+    <section id="services">
+
+        <h2>NOSSOS SERVIÇOS</h2>
+
+        <p>Desfrute de uma seleção dos nossos melhores serviços, feitos para realçar o seu estilo e valor de imediato.</p>
+
+
+        <div class="service-cards">
+            <div class="card">
+                <div class="icon">
+                    <img src="/images/barbeador.png" alt="tesoura" class="tesoura">
+                </div>
+                <h3>CORTES DE CABELO</h3>
+                <p>Corte clássico</p>
+                <p>Corte moderno ou estilizado (fade, undercut, pompadour, etc.)</p>
+                <p>Corte infantil</p>
+                <p>Ajuste de corte entre visitas</p>
+                <span class="price">R$</span>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="/images/bigode.png" alt="barba" class="barba">
+                </div>
+                <h3>Cuidados com a barba</h3>
+                <p>Aparação e modelagem de barba</p>
+                <p>Raspagem completa</p>
+                <p>Hidratação e cuidados com a barba</p>
+                <p>Tintura para barba</p>
+                <span class="price">R$</span>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="/images/cadeira-de-barbeiro.png" alt="tratamentos capilares">
+                </div>
+                <h3>Tratamentos capilares</h3>
+                <p>Hidratação capilar</p>
+                <p>Tratamento para queda de cabelo</p>
+                <p>Massagem no couro cabeludo</p>
+                <p>Alisamento masculino ou progressiva</p>
+                <p>Tonalização ou coloração de cabelo</p>
+                <span class="price">R$</span>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <img src="/images/barba (1).png" alt="serviços" class="serviços adicionais">
+                </div>
+                <h3>Serviços adicionais</h3>
+                <p>Limpeza de pele</p>
+                <p>ratamento antienvelhecimento</p>
+                <p>Esfoliação facial</p>
+                <p>Depilação facial com linha ou cera</p>
+                <p>Finalização com pomadas, ceras ou sprays</p>
+                <span class="price">R$</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="agendamento" id="agendamento">
+        <div class="image-section">
+            <img src="/images/pexels-cottonbro-3993133.jpg" alt="Imagem da Barbearia">
+        </div>
+
+        <div class="form-section">
+            <h1>Faça seu Agendamento</h1>
+            <span id="line2"></span>
+
+            <form id="agendamentoForm">
+                <p>Selecione os serviços de sua preferência:</p>
+
+                <!-- Ícones clicáveis -->
+                <div class="service-icons">
+
+                    <div class="iconn" onclick="toggleServiceList('corte')">
+                        <img src="/images/barbeador.png" alt="Cortes de Cabelo">
+                    </div>
+                    <div class="iconn" onclick="toggleServiceList('barba')">
+                        <img src="/images/bigode.png" alt="Cuidados com a Barba">
+                    </div>
+                    <div class="iconn" onclick="toggleServiceList('tratamentos')">
+                        <img src="/images/cadeira-de-barbeiro.png" alt="Tratamentos Capilares">
+                    </div>
+                    <div class="iconn" onclick="toggleServiceList('adicionais')">
+                        <img src="/images/barba (1).png" alt="Serviços Adicionais">
+                    </div>
+                </div>
+
+                <!-- Listas de serviços (inicialmente ocultas) -->
+                <div id="corte" class="service-list hidden">
+                    <div class="service-item" data-service="Corte Clássico" onclick="addService('Corte Clássico')">Corte Clássico <span>+</span></div>
+                    <div class="service-item" data-service="Corte Moderno" onclick="addService('Corte Moderno')">Corte Moderno <span>+</span></div>
+                    <div class="service-item" data-service="Corte Infantil" onclick="addService('Corte Infantil')">Corte Infantil <span>+</span></div>
+                    <div class="service-item" data-service="Ajuste de Corte" onclick="addService('Ajuste de Corte')">Ajuste de Corte <span>+</span></div>
+                </div>
+
+                <div id="barba" class="service-list hidden">
+                    <div class="service-item" data-service="Aparação de Barba" onclick="addService('Aparação de Barba')">Aparação de Barba <span>+</span></div>
+                    <div class="service-item" data-service="Raspagem Completa" onclick="addService('Raspagem Completa')">Raspagem Completa <span>+</span></div>
+                    <div class="service-item" data-service="Hidratação de Barba" onclick="addService('Hidratação de Barba')">Hidratação de Barba <span>+</span></div>
+                    <div class="service-item" data-service="Tintura de Barba" onclick="addService('Tintura de Barba')">Tintura de Barba <span>+</span></div>
+                </div>
+
+                <div id="tratamentos" class="service-list hidden">
+                    <div class="service-item" data-service="Hidratação Capilar" onclick="addService('Hidratação Capilar')">Hidratação Capilar <span>+</span></div>
+                    <div class="service-item" data-service="Tratamento para Queda de Cabelo" onclick="addService('Tratamento para Queda de Cabelo')">Tratamento para Queda de Cabelo <span>+</span></div>
+                    <div class="service-item" data-service="Massagem no Couro Cabeludo" onclick="addService('Massagem no Couro Cabeludo')">Massagem no Couro Cabeludo <span>+</span></div>
+                    <div class="service-item" data-service="Alisamento Masculino" onclick="addService('Alisamento Masculino')">Alisamento Masculino <span>+</span></div>
+                    <div class="service-item" data-service="Tonalização de Cabelo" onclick="addService('Tonalização de Cabelo')">Tonalização de Cabelo <span>+</span></div>
+                </div>
+
+                <div id="adicionais" class="service-list hidden">
+                    <div class="service-item" data-service="Limpeza de Pele" onclick="addService('Limpeza de Pele')">Limpeza de Pele <span>+</span></div>
+                    <div class="service-item" data-service="Tratamento Antienvelhecimento" onclick="addService('Tratamento Antienvelhecimento')">Tratamento Antienvelhecimento <span>+</span></div>
+                    <div class="service-item" data-service="Esfoliação Facial" onclick="addService('Esfoliação Facial')">Esfoliação Facial <span>+</span></div>
+                    <div class="service-item" data-service="Depilação Facial" onclick="addService('Depilação Facial')">Depilação Facial <span>+</span></div>
+                    <div class="service-item" data-service="Finalização com Pomada" onclick="addService('Finalização com Pomada')">Finalização com Pomada <span>+</span></div>
+                </div>
+
+
+                <!-- Serviços selecionados (vai enviar para o backend) -->
+                <div id="selected-services" class="selected-services"></div>
+
+                <p>Preencha este formulário para garantir seu horário</p>
+
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+                <span class="form-flex">
+                        <input type="date" id="data" name="data" required>
+                        <input type="time" id="hora" name="horario" min="08:00" max="20:00" required>
+                        <input type="number" id="telefone" name="telefone" min="1" placeholder="Contato" required>
+                </span>
+
+                <!-- Barbeiros -->
+                <div class="barbeiros">
+                    <label class="barbeiro-card">
+                        <input type="radio" name="barbeiro" value="Rafael" required>
+                        <img src="/images/pexels-alex-ozerov-meyer-651936162-17784001.jpg" alt="Barbeiro 1">
+                        <span>Rafael</span>
+                    </label>
+
+                    <label class="barbeiro-card">
+                        <input type="radio" name="barbeiro" value="Thiago" required>
+                        <img src="/images/pexels-leonardo-goncalves-wild-1485542730-27867370.jpg" alt="Barbeiro 2">
+                        <span>Thiago</span>
+                    </label>
+
+                    <label class="barbeiro-card">
+                        <input type="radio" name="barbeiro" value="Daniel" required>
+                        <img src="/images/pexels-leonardo-goncalves-wild-1485542730-27867888.jpg" alt="Barbeiro 3">
+                        <span>Daniel</span>
+                    </label>
+                </div>
+
+                <button type="submit">Agendar</button>
+            </form>
+
+        </div>
+
+    </section>
+</main>
+
+<div id="confirm">
+    <img src="/images/verificado.png">
+    <p id="resultado"></p>
+</div>
+
+<footer>
+    <span id="line3"></span>
+
+    <img src="/images/logoo.png" alt="logo">
+
+    <div id="footer_items">
+
+                <span id="copyright">
+                    &copy 2024 Grupo 263
+                </span>
+
+        <div class="social-media-buttons">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function rolarParaSessao(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script src="/javascript/script.js"></script>
+
+<script src="/javascript/agendamentoConfirm.js"></script>
+
+</body>
+</html>
