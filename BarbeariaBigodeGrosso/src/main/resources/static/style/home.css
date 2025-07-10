@@ -1,0 +1,46 @@
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 10vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#texto{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+#texto .titulo{
+    font-size: 3rem;
+    color: white;
+}
+
+#texto .titulo span{
+    color: #CC9051;
+}
+
+#texto .descricao{
+    font-size: 1rem;
+}
+
+#texto #line{
+    display: flex;
+    width: 30%;
+    border: 1.5px solid #CC9051;
+}
+
+#foto img{
+    max-width: 40vw;
+    height: auto;
+    left: 50%;
+    transform: translateX(30%);
+    top: 50%;
+
+}
+

@@ -1,0 +1,231 @@
+.agendamento {
+    display: flex;
+    margin: auto;
+    align-items: stretch;
+    background-color: #171717;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 90vw;
+    min-height: 600px;
+}
+
+.image-section {
+    flex: 1;
+}
+
+
+.image-section img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    transform: translateX(-10%);
+    padding: 25px 45px 2px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: left;
+  gap: 50px;
+  color: #fff;
+}
+
+#line2{
+    width: 200px;
+    border: 1.5px solid #CC9051;
+    margin-bottom: 35px;
+    transform: translateX(175%);
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ícones clicáveis */
+.service-icons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.iconn {
+  margin-bottom: 1rem;
+  background-color: #1e1e1e;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.iconn img {
+  width: 35px;
+}
+
+
+/* Lista de serviços */
+.service-list {
+  display: none;
+  position: fixed;  /* Fica fixa na tela */
+  bottom: 420px;  /* Ajuste para definir a distância da parte inferior da tela */
+  left: 50%;  /* Centraliza horizontalmente */
+  transform: translateX(50%);  /* Mantém a centralização horizontal */
+  background-color: rgba(51, 51, 51, 0.9);  /* Fundo semi-transparente */
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;  /* Garantir que fique sobre outros elementos */
+}
+
+.service-item {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #444;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.service-item:hover {
+  background-color: #CC9051;
+  color: #1b1b1b;
+}
+
+.service-item span {
+  font-weight: bold;
+  color: #CC9051;
+}
+
+/* Serviços selecionados */
+.selected-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 23px 0px;
+}
+
+.selected-services .chip {
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border: 2px solid #CC9051;
+
+}
+
+.selected-services .chip span {
+  font-weight: bold;
+  color: #CC9051;
+}
+
+.form-flex{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+input[type="date"], input[type="time"], input[type="number"] {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+input, button {
+  padding: 20px 0px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input{
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px;
+  font-size: .90rem;
+}
+
+.barbeiros {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 23px;
+}
+
+.barbeiro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.barbeiro-card input {
+  display: none;
+}
+
+.barbeiro-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.barbeiro-card span {
+  margin-top: 12px;
+  font-size: 1em;
+}
+
+.barbeiro-card input:checked + img {
+  transform: scale(1.1);
+  border: 2.3px solid #CC9051;
+  box-shadow: 0px 0px 6px 0px #CC9051;
+}
+
+.barbeiro-card:hover {
+  transform: scale(1.05);
+  border-color: #CC9051;
+}
+
+
+button {
+  background-color: rgb(19, 19, 19);
+  margin-top: 25px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #CC9051;
+  box-shadow: 0px 0px 6px 0px #CC9051;
+}
