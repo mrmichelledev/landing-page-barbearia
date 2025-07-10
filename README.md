@@ -64,10 +64,12 @@ src
 ---
 
 ## 📸 Captura de Tela
-![imagem1](https://github.com/user-attachments/assets/af9e0df7-cbc6-42ec-accf-328b011f747b)
-![imagem2](https://github.com/user-attachments/assets/1c36edc9-0a0f-4515-b0d1-b4eebb74ccda)
-![imagem3](https://github.com/user-attachments/assets/2e53c1c5-0875-4de5-9a02-2fe0d758bb41)
-![imagem4](https://github.com/user-attachments/assets/249b7588-2f8a-4f85-9d18-b24b2b7bd2f2)
+<img width="1920" height="799" alt="imagem1" src="https://github.com/user-attachments/assets/a923c033-0aa9-4a82-9e90-2139c07e0b24" />
+<img width="1920" height="1080" alt="imagem2" src="https://github.com/user-attachments/assets/bd203d3c-90cc-460d-9406-4eea19f2c4d3" />
+<img width="1920" height="1080" alt="imagem3" src="https://github.com/user-attachments/assets/d99e6171-408c-47d7-806f-859ac1b0e036" />
+<img width="1920" height="1080" alt="imagem4" src="https://github.com/user-attachments/assets/a9ca706e-691e-4d8a-8205-cfc725542ecc" />
+
+
 
 ---
 
